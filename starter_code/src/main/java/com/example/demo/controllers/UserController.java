@@ -44,21 +44,26 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
-        User user = new User();
-        user.setUsername(createUserRequest.getUsername());
-        log.info(String.format("Username set with %s", createUserRequest.getUsername()));
+        try {
+            User user = new User();
+            user.setUsername(createUserRequest.getUsername());
+            log.info(String.format("Username set with %s", createUserRequest.getUsername()));
 
-        Cart cart = new Cart();
-        cartRepository.save(cart);
-        user.setCart(cart);
-        if (createUserRequest.getPassword().length() < 7 ||
-                !createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-            log.error(String.format("Cannot create user %s. Error with user password. Either length is less than 7 or password and confirmation password do not match.", createUserRequest.getUsername()));
-            return ResponseEntity.badRequest().build();
+            Cart cart = new Cart();
+            cartRepository.save(cart);
+            user.setCart(cart);
+            if (createUserRequest.getPassword().length() < 7 ||
+                    !createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
+                log.error(String.format("Cannot create user %s. Error with user password. Either length is less than 7 or password and confirmation password do not match.", createUserRequest.getUsername()));
+                return ResponseEntity.badRequest().build();
+            }
+            user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
+            userRepository.save(user);
+            log.info("User saved successfully");
+            return ResponseEntity.ok(user);
+        } catch (Exception exception) {
+            log.error(String.format("Exception caught when creating user: %s", exception.getMessage()));
+            return ResponseEntity.status(500).build();
         }
-        user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
-        userRepository.save(user);
-        log.info("User saved successfully");
-        return ResponseEntity.ok(user);
     }
 }

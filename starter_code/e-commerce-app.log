@@ -1,0 +1,71 @@
+2021-06-04 15:45:56,302 INFO [main] c.e.d.SareetaApplication [StartupInfoLogger.java:50] Starting SareetaApplication on AnnNs-MacBook-Air.local with PID 21809 (/Users/annn/Desktop/E-commerce/starter_code/target/classes started by annn in /Users/annn/Desktop/E-commerce/starter_code)
+2021-06-04 15:45:56,304 DEBUG [main] c.e.d.SareetaApplication [StartupInfoLogger.java:53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2021-06-04 15:45:56,305 INFO [main] c.e.d.SareetaApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-06-04 15:46:04,632 DEBUG [main] c.e.d.s.JWTAuthenticationVerficationFilter [GenericFilterBean.java:241] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2021-06-04 15:46:06,224 INFO [main] c.e.d.SareetaApplication [StartupInfoLogger.java:59] Started SareetaApplication in 15.554 seconds (JVM running for 16.859)
+2021-06-04 15:47:12,208 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:50] Username set with Anna
+2021-06-04 15:47:12,476 ERROR [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:65] Exception caught when creating user: Cannot invoke "String.length()" because the return value of "com.example.demo.model.requests.CreateUserRequest.getPassword()" is null
+2021-06-04 15:48:24,631 INFO [http-nio-8080-exec-4] c.e.d.c.UserController [UserController.java:50] Username set with Anna
+2021-06-04 15:48:24,641 ERROR [http-nio-8080-exec-4] c.e.d.c.UserController [UserController.java:57] Cannot create user Anna. Error with user password. Either length is less than 7 or password and confirmation password do not match.
+2021-06-04 15:49:32,671 INFO [http-nio-8080-exec-6] c.e.d.c.UserController [UserController.java:50] Username set with Anna
+2021-06-04 15:49:32,861 INFO [http-nio-8080-exec-6] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-04 15:49:57,684 INFO [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:41] User found by name: Anna.
+2021-06-04 15:52:53,352 ERROR [http-nio-8080-exec-5] c.e.d.c.CartController [CartController.java:41] User with userName Tom not found when adding to cart.
+2021-06-04 15:54:06,510 INFO [http-nio-8080-exec-8] c.e.d.c.CartController [CartController.java:53] Cart saved successfully with added items
+2021-06-04 15:54:21,693 ERROR [http-nio-8080-exec-9] c.e.d.c.CartController [CartController.java:46] Item not found when adding to cart.
+2021-06-04 15:54:41,414 INFO [http-nio-8080-exec-10] c.e.d.c.CartController [CartController.java:53] Cart saved successfully with added items
+2021-06-04 15:57:33,613 ERROR [http-nio-8080-exec-3] c.e.d.c.CartController [CartController.java:66] User with userName Tom not found when removing items from cart.
+2021-06-04 15:58:11,706 ERROR [http-nio-8080-exec-4] c.e.d.c.CartController [CartController.java:71] Item not found when removing items from cart.
+2021-06-04 15:58:28,103 INFO [http-nio-8080-exec-5] c.e.d.c.CartController [CartController.java:78] Cart saved successfully after removing items
+2021-06-04 15:59:24,196 ERROR [http-nio-8080-exec-6] c.e.d.c.CartController [CartController.java:71] Item not found when removing items from cart.
+2021-06-04 15:59:48,120 ERROR [http-nio-8080-exec-7] c.e.d.c.CartController [CartController.java:66] User with userName null not found when removing items from cart.
+2021-06-04 16:04:54,186 ERROR [http-nio-8080-exec-2] c.e.d.c.OrderController [OrderController.java:30] Could not find user with username: Philip when submitting order.
+2021-06-04 16:05:28,734 INFO [http-nio-8080-exec-1] c.e.d.c.OrderController [OrderController.java:35] Order saved successfully for user: Anna
+2021-06-04 16:08:45,339 INFO [http-nio-8080-exec-8] c.e.d.c.OrderController [OrderController.java:46] Retrieved orders for user: Anna.
+2021-06-04 16:09:10,082 ERROR [http-nio-8080-exec-9] c.e.d.c.OrderController [OrderController.java:43] Could not find order for user: Mark.
+2021-06-04 16:13:48,645 INFO [http-nio-8080-exec-6] c.e.d.c.UserController [UserController.java:50] Username set with Anna
+2021-06-04 16:13:48,662 ERROR [http-nio-8080-exec-6] c.e.d.c.UserController [UserController.java:57] Cannot create user Anna. Error with user password. Either length is less than 7 or password and confirmation password do not match.
+2021-06-04 16:14:34,957 INFO [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:50] Username set with Rob
+2021-06-04 16:14:34,961 ERROR [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:57] Cannot create user Rob. Error with user password. Either length is less than 7 or password and confirmation password do not match.
+2021-06-04 16:14:58,519 INFO [http-nio-8080-exec-10] c.e.d.c.UserController [UserController.java:50] Username set with Frank
+2021-06-04 16:14:58,526 ERROR [http-nio-8080-exec-10] c.e.d.c.UserController [UserController.java:65] Exception caught when creating user: Cannot invoke "String.length()" because the return value of "com.example.demo.model.requests.CreateUserRequest.getPassword()" is null
+2021-06-05 19:19:28,039 INFO [main] c.e.d.SareetaApplication [StartupInfoLogger.java:50] Starting SareetaApplication on AnnNs-MacBook-Air.local with PID 31236 (/Users/annn/Desktop/E-commerce/starter_code/target/classes started by annn in /Users/annn/Desktop/E-commerce/starter_code)
+2021-06-05 19:19:28,045 DEBUG [main] c.e.d.SareetaApplication [StartupInfoLogger.java:53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2021-06-05 19:19:28,047 INFO [main] c.e.d.SareetaApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2021-06-05 19:19:37,371 DEBUG [main] c.e.d.s.JWTAuthenticationVerficationFilter [GenericFilterBean.java:241] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2021-06-05 19:19:39,009 INFO [main] c.e.d.SareetaApplication [StartupInfoLogger.java:59] Started SareetaApplication in 16.967 seconds (JVM running for 18.721)
+2021-06-05 19:19:51,304 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:50] Username set with Anna
+2021-06-05 19:19:51,614 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:19:59,632 INFO [http-nio-8080-exec-3] c.e.d.c.UserController [UserController.java:50] Username set with Tom
+2021-06-05 19:19:59,759 INFO [http-nio-8080-exec-3] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:20:06,696 INFO [http-nio-8080-exec-4] c.e.d.c.UserController [UserController.java:50] Username set with Philip
+2021-06-05 19:20:06,857 INFO [http-nio-8080-exec-4] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:20:19,407 INFO [http-nio-8080-exec-5] c.e.d.c.UserController [UserController.java:50] Username set with Casandra
+2021-06-05 19:20:19,565 INFO [http-nio-8080-exec-5] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:21:23,940 INFO [http-nio-8080-exec-7] c.e.d.c.UserController [UserController.java:50] Username set with Sara
+2021-06-05 19:21:24,114 INFO [http-nio-8080-exec-7] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:21:29,925 INFO [http-nio-8080-exec-9] c.e.d.c.UserController [UserController.java:50] Username set with Peter
+2021-06-05 19:21:30,180 INFO [http-nio-8080-exec-9] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:21:44,504 INFO [http-nio-8080-exec-10] c.e.d.c.UserController [UserController.java:50] Username set with Mark
+2021-06-05 19:21:44,622 INFO [http-nio-8080-exec-10] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:21:52,833 INFO [http-nio-8080-exec-2] c.e.d.c.UserController [UserController.java:50] Username set with Rosa
+2021-06-05 19:21:53,073 INFO [http-nio-8080-exec-2] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:21:59,948 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:50] Username set with Helen
+2021-06-05 19:22:00,123 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:22:08,301 INFO [http-nio-8080-exec-3] c.e.d.c.UserController [UserController.java:50] Username set with Dorothy
+2021-06-05 19:22:08,482 INFO [http-nio-8080-exec-3] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:27:07,640 INFO [http-nio-8080-exec-6] c.e.d.c.UserController [UserController.java:50] Username set with Frank
+2021-06-05 19:27:07,855 INFO [http-nio-8080-exec-6] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:27:15,111 INFO [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:50] Username set with Carol
+2021-06-05 19:27:15,224 INFO [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:29:35,374 INFO [http-nio-8080-exec-10] c.e.d.c.UserController [UserController.java:50] Username set with Veronica
+2021-06-05 19:29:35,648 INFO [http-nio-8080-exec-10] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:31:31,842 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:50] Username set with Jan
+2021-06-05 19:31:31,963 INFO [http-nio-8080-exec-1] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:31:39,651 INFO [http-nio-8080-exec-4] c.e.d.c.UserController [UserController.java:50] Username set with Robert
+2021-06-05 19:31:39,876 INFO [http-nio-8080-exec-4] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:35:11,598 INFO [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:50] Username set with Agnes
+2021-06-05 19:35:11,961 INFO [http-nio-8080-exec-8] c.e.d.c.UserController [UserController.java:62] User saved successfully
+2021-06-05 19:35:17,767 INFO [http-nio-8080-exec-7] c.e.d.c.UserController [UserController.java:50] Username set with Peter
+2021-06-05 19:35:18,080 ERROR [http-nio-8080-exec-7] c.e.d.c.UserController [UserController.java:65] Exception caught when creating user: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 6"; SQL statement:
+insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505-199]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
